@@ -42,14 +42,26 @@ public class CostActivity extends Activity {
                 if(powerEdit.length() > 0){
                     power = Double.parseDouble(powerEdit.getText().toString());
                 }
+                String powerUnit = powerSpinner.getSelectedItem().toString();
 
                 double bill = 0;
                 if(billEdit.length() > 0){
                     bill = Double.parseDouble(billEdit.getText().toString());
                 }
+                String billUnit = billSpinner.getSelectedItem().toString();
 
-                cOuptut.setText(timeUnit);
+                cOuptut.setText(calculate(time, power, bill, timeUnit, powerUnit, billUnit));
             }
         });
+    }
+
+    public String calculate(double time, double power, double bill, String timeUnit, String powerUnit, String billUnit){
+        double cost = time*power*bill;
+
+        String result = "";
+        if (billUnit.equals("$")){
+            result = ("$ " + cost);
+        }
+        return result;
     }
 }

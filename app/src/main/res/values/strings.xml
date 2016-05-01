@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Energy Savings</string>
+    <string name="long_app_name">Energy Savings</string>
+    <string name="action_settings">Settings</string>
+    <string name="costs_label">Energy Costs</string>
+    <string name="tips_label">Tips and Tricks</string>
+    <string name="settings_label">Settings</string>
+    <string name="ok_label">OK</string>
+    <string name="about_title">About Ultimate Tic Tac Toe</string>
+    <string name="about_text">This game is played just like regular Tic Tac Toe with one difference: to win a tile you have to win a smaller game of Tic Tac Toe inside that tile\n\n\
+
+    A tie happens when there are no further moves. In the case of a tie in a small board, that will count as a win for both sides in the larger game.</string>
+    <string name="hours_text">Hours Per Day Appliance is Used?</string>
+
+    <string-array name="time_array">
+        <item>Hours</item>
+        <item>Minutes</item>
+        <item>Seconds</item>
+    </string-array>
+    <string-array name="power_array">
+        <item>Watts</item>
+        <item>kiloWatts</item>
+    </string-array>
+    <string-array name="bill_array">
+        <item>Dollars</item>
+        <item>Euros</item>
+    </string-array>
+</resources>

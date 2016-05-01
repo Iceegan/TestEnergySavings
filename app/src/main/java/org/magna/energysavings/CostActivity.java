@@ -22,11 +22,11 @@ public class CostActivity extends Activity {
         //declarations
         final EditText timeEdit = (EditText) findViewById(R.id.time_edit);
         final Spinner timeSpinner = (Spinner) findViewById(R.id.time_spinner);
-        EditText powerEdit = (EditText) findViewById(R.id.power_edit);
-        Spinner powerSpinner = (Spinner)findViewById(R.id.power_spinner);
-        EditText billEdit = (EditText) findViewById(R.id.bill_edit);
-        Spinner billSpinner = (Spinner) findViewById(R.id.bill_spinner);
-        Button calcButton = (Button) findViewById(R.id.calc_button);
+        final EditText powerEdit = (EditText) findViewById(R.id.power_edit);
+        final Spinner powerSpinner = (Spinner)findViewById(R.id.power_spinner);
+        final EditText billEdit = (EditText) findViewById(R.id.bill_edit);
+        final Spinner billSpinner = (Spinner) findViewById(R.id.bill_spinner);
+        final Button calcButton = (Button) findViewById(R.id.calc_button);
         final TextView cOuptut = (TextView) findViewById(R.id.c_output);
 
         calcButton.setOnClickListener(new View.OnClickListener() {
@@ -36,10 +36,18 @@ public class CostActivity extends Activity {
                 if(timeEdit.length() > 0){
                     time = Double.parseDouble(timeEdit.getText().toString());
                 }
-
-
-
                 String timeUnit = timeSpinner.getSelectedItem().toString();
+
+                double power = 0;
+                if(powerEdit.length() > 0){
+                    power = Double.parseDouble(powerEdit.getText().toString());
+                }
+
+                double bill = 0;
+                if(billEdit.length() > 0){
+                    bill = Double.parseDouble(billEdit.getText().toString());
+                }
+
                 cOuptut.setText(timeUnit);
             }
         });

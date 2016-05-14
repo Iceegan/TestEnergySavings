@@ -21,6 +21,9 @@
         <activity android:name=".CostActivity"
             android:label="Cost Calculator">
         </activity>
+        <activity android:name=".SettingsActivity"
+            android:label="Settings">
+        </activity>
     </application>
 
 </manifest>

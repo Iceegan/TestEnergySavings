@@ -18,23 +18,15 @@ public class MainFragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
         //Handle Buttons here...
         View settingsButton = rootView.findViewById(R.id.settings_button);
-        settingsButton.setOnClickListener(new View.OnClickListener(){
+        View costsButton = rootView.findViewById(R.id.costs_button);
+
+        settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                builder.setTitle(R.string.about_title);
-                builder.setMessage(R.string.about_text);
-                builder.setCancelable(false);
-                builder.setPositiveButton(R.string.ok_label, new DialogInterface.OnClickListener(){
-                    //@Override
-                    public void onClick(DialogInterface dialogInterface, int i){
-                        //nothing
-                    }
-                });
-                mDialog = builder.show();
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SettingsActivity.class);
+                getActivity().startActivity(intent);
             }
         });
-        View costsButton = rootView.findViewById(R.id.costs_button);
         costsButton.setOnClickListener(new View.OnClickListener(){
            @Override
             public void onClick(View view){

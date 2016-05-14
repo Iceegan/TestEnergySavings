@@ -66,17 +66,29 @@ public class CostActivity extends Activity {
 
     public String calculate(double time, double power, double bill, String timeUnit, String powerUnit, String billUnit){
         double powerPerDay = time*power;
-        double kiloWatts = powerPerDay/1000;
-        double cost = powerPerDay;
-
+        if(timeUnit.equals("Minutes")){
+            powerPerDay /= 60;
+        }
+        else if(timeUnit.equals("Seconds")){
+            powerPerDay /= 3600;
+        }
+        if(powerUnit.equals("Watts")){
+            powerPerDay/=1000;
+        }
+        double powerPerMonth = powerPerDay*30;
+        double cost = powerPerMonth*bill;
 
         DecimalFormat df = new DecimalFormat("#.00");
 
-        String result = "";
-        if (billUnit.equals("$")){
-            result = ("$ " + cost);
+        String result = "Please Use Every Field";
+
+        if(billUnit.equals("Dollars/kWh")){
+            return "$ " + df.format(cost);
         }
-        result += "$ " + df.format(cost);
-        return result;
+        if(billUnit.equals("Euros/kWh")){
+            return "\u20AC" + df.format(cost);
+        }
+
+        return "Fill out all fields";
     }
 }

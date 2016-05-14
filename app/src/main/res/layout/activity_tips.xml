@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipChildren="false"
-    tools:context=".org.magna.energysavings">
+    android:orientation="vertical"
+    tools:context="org.magna.energysavings.CostActivity">
 
-    <fragment
-        android:id="@+id/main_fragment"
-        class="org.magna.energysavings.MainFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <LinearLayout style="@style/DataEntry"
+        android:paddingTop="@dimen/top_padding">
+
+
+        <Button
+            android:id="@+id/temp"
+            style="@style/q_text"
+            android:layout_gravity="center"
+            android:text="Calculate"/>
+
+
+        <Spinner
+            android:id="@+id/time_spinner"
+            style="@style/spinner_style"
+            android:layout_gravity="right"
+            android:entries="@array/time_array">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout style="@style/DataEntry">
+
+        <EditText
+            android:id="@+id/power_edit"
+            style="@style/q_text"
+            android:hint="Power Draw of Appliance"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/power_spinner"
+            style="@style/spinner_style"
+            android:entries="@array/power_array">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout style="@style/DataEntry"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/bill_edit"
+            style="@style/q_text"
+            android:hint="Cost of Electricity" />
+
+        <Spinner
+            android:id="@+id/bill_spinner"
+            style="@style/spinner_style"
+            android:entries="@array/bill_array">
+
+        </Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calc_button"
+        style="@style/q_text"
         android:layout_gravity="center"
-        tools:layout="@layout/fragment_main"/>
+        android:text="Calculate"/>
+    <TextView
+        android:paddingTop="@dimen/top_padding"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Bill:"
+        />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/c_output"
+        android:paddingTop="@dimen/top_padding"
+        style="@style/c_text"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="$0"/>
+
+
+</LinearLayout>

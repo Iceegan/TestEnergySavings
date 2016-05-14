@@ -7,9 +7,12 @@
     android:clipChildren="false"
     tools:context=".org.magna.energysavings">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
-
+    <fragment
+        android:id="@+id/main_fragment"
+        class="org.magna.energysavings.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:layout="@layout/fragment_main"/>
 
 </FrameLayout>

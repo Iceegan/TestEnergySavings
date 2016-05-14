@@ -23,7 +23,7 @@
         <item>kiloWatts</item>
     </string-array>
     <string-array name="bill_array">
-        <item>Dollars</item>
-        <item>Euros</item>
+        <item>Dollars/kWh</item>
+        <item>Euros/kwH</item>
     </string-array>
 </resources>

@@ -4,11 +4,14 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/help_tv"
         style="@style/settings_text"
         android:text="Help" />
     <View style="@style/Divider"/>
     <TextView
+        android:id="@+id/about_tv"
         style="@style/settings_text"
         android:text="About"/>
+    <View style="@style/Divider"/>
 
 </LinearLayout>

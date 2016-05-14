@@ -7,10 +7,10 @@
     <string name="tips_label">Tips and Tricks</string>
     <string name="settings_label">Settings</string>
     <string name="ok_label">OK</string>
-    <string name="about_title">About Ultimate Tic Tac Toe</string>
-    <string name="about_text">This game is played just like regular Tic Tac Toe with one difference: to win a tile you have to win a smaller game of Tic Tac Toe inside that tile\n\n\
-
-    A tie happens when there are no further moves. In the case of a tie in a small board, that will count as a win for both sides in the larger game.</string>
+    <string name="about_title">About Energy Savings</string>
+    <string name="about_text">Remember to fill this out KEEGAN</string>
+    <string name="help_title">Help for Energy Savings</string>
+    <string name="help_text">Thank you for downloading our app! Energy Savings has one main purpose: to help you save energy! Use the Energy Calculator to get started. Type in your the power draw of your appliance, how long you use it every day, and what your monthly cost per kWh of electricity is and it will calculate the operating cost of that appliance!</string>
     <string name="hours_text">Hours Per Day Appliance is Used?</string>
 
     <string-array name="time_array">

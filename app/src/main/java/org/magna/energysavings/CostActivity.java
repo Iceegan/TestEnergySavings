@@ -66,6 +66,7 @@ public class CostActivity extends Activity {
 
     public String calculate(double time, double power, double bill, String timeUnit, String powerUnit, String billUnit){
         double powerPerDay = time*power;
+        double kiloWatts = powerPerDay/1000;
         double cost = powerPerDay;
 
 

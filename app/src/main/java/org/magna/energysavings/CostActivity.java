@@ -7,10 +7,13 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.text.DecimalFormat;
 
 public class CostActivity extends Activity {
     @Override
@@ -32,6 +35,11 @@ public class CostActivity extends Activity {
         calcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                InputMethodManager inputManager = (InputMethodManager)
+                        getSystemService(INPUT_METHOD_SERVICE);
+
+                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                        InputMethodManager.HIDE_NOT_ALWAYS);
                 double time = 0;
                 if(timeEdit.length() > 0){
                     time = Double.parseDouble(timeEdit.getText().toString());
@@ -50,18 +58,24 @@ public class CostActivity extends Activity {
                 }
                 String billUnit = billSpinner.getSelectedItem().toString();
 
+
                 cOuptut.setText(calculate(time, power, bill, timeUnit, powerUnit, billUnit));
             }
         });
     }
 
     public String calculate(double time, double power, double bill, String timeUnit, String powerUnit, String billUnit){
-        double cost = time*power*bill;
+        double powerPerDay = time*power;
+        double cost = powerPerDay;
+
+
+        DecimalFormat df = new DecimalFormat("#.00");
 
         String result = "";
         if (billUnit.equals("$")){
             result = ("$ " + cost);
         }
+        result += "$ " + df.format(cost);
         return result;
     }
 }

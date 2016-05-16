@@ -25,11 +25,25 @@
 
     </style>
 
+    <style name="settings_text" parent="android:style/TextAppearance">
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">20dp</item>
+
+    </style>
+
     <style name="spinner_style" parent="android:style/TextAppearance">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">right</item>
         android:layout_height="wrap_content"
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
     </style>
 
 </resources>

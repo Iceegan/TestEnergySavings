@@ -19,11 +19,19 @@ public class MainFragment extends Fragment{
         //Handle Buttons here...
         View settingsButton = rootView.findViewById(R.id.settings_button);
         View costsButton = rootView.findViewById(R.id.costs_button);
+        View tipsButton = rootView.findViewById(R.id.tips_button);
 
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), SettingsActivity.class);
+                getActivity().startActivity(intent);
+            }
+        });
+        tipsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), TipsActivity.class);
                 getActivity().startActivity(intent);
             }
         });

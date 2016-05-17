@@ -12,6 +12,13 @@
     <string name="help_title">Help for Energy Savings</string>
     <string name="help_text">Thank you for downloading our app! Energy Savings has one main purpose: to help you save energy! Use the Energy Calculator to get started. Type in your the power draw of your appliance, how long you use it every day, and what your monthly cost per kWh of electricity is and it will calculate the operating cost of that appliance!</string>
     <string name="hours_text">Hours Per Day Appliance is Used?</string>
+    <string name="lighting_title">Tips for lighting:</string>
+    <string name="heating_title">Tips for HVAC:</string>
+    <string name="cooking_title">Tips for cooking:</string>
+    <string name="lighting_tips">1. Turn lights off when not in use\n2. Replace standard bulbs with CFLs\n3. Use an automatic timer for lights\n4. Take advantage of natural lighting</string>
+    <string name="heating_tips">1. Install window blinds\n2. Use ceiling fans\n3. Change AC filters regularly\n4. Adjust thermostat slowly</string>
+    <string name="cooking_tips">1. Keep the freezer full\n2. Repair fridge leaks immediately\n3. Use a toaster oven to reheat food\n4. Cook meals outside in summer</string>
+
 
     <string-array name="time_array">
         <item>Hours</item>

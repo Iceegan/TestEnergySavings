@@ -4,81 +4,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="org.magna.energysavings.CostActivity">
+    tools:context="org.magna.energysavings.TipsActivity">
 
-    <LinearLayout style="@style/DataEntry"
-        android:paddingTop="@dimen/top_padding">
 
-        <EditText
-            android:id="@+id/time_edit"
-            style="@style/q_text"
-            android:hint="Time Per Day Appliance is Used"
-            android:inputType="numberDecimal"/>
-
-        <Spinner
-            android:id="@+id/time_spinner"
-            style="@style/spinner_style"
-            android:layout_gravity="right"
-            android:entries="@array/time_array">
-
-        </Spinner>
-    </LinearLayout>
-
-    <LinearLayout style="@style/DataEntry">
-
-        <EditText
-            android:id="@+id/power_edit"
-            style="@style/q_text"
-            android:hint="Power Draw of Appliance"
-            android:inputType="numberDecimal"/>
-
-        <Spinner
-            android:id="@+id/power_spinner"
-            style="@style/spinner_style"
-            android:entries="@array/power_array">
-
-        </Spinner>
-    </LinearLayout>
-
-    <LinearLayout style="@style/DataEntry"
-        android:paddingBottom="20dp">
-
-        <EditText
-            android:id="@+id/bill_edit"
-            style="@style/q_text"
-            android:hint="Cost of Electricity"
-            android:inputType="numberDecimal"/>
-
-        <Spinner
-            android:id="@+id/bill_spinner"
-            style="@style/spinner_style"
-            android:entries="@array/bill_array">
-
-        </Spinner>
-    </LinearLayout>
 
     <Button
-        android:id="@+id/calc_button"
-        style="@style/q_text"
-        android:layout_gravity="center"
-        android:text="Calculate"/>
+        android:id="@+id/lighting_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="@dimen/menu_button_padding"
+        android:text="Lighting"
+        android:paddingTop="@dimen/top_padding" />
+
+    <Button
+        android:id="@+id/heating_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="@dimen/menu_button_padding"
+        android:text="Heating and Cooling" />
+
+    <Button
+        android:id="@+id/cooking_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Cooking"
+        android:padding="@dimen/menu_button_padding" />
+
     <TextView
-        android:paddingTop="@dimen/top_padding"
-        android:textSize="50dp"
+        android:id="@+id/tips_title"
+        android:padding="30dp"
+        android:textSize="30dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Monthly Bill:"
+        android:text="Select a topic"
         />
 
     <TextView
-        android:id="@+id/c_output"
-        android:paddingTop="@dimen/top_padding"
-        style="@style/c_text"
-        android:layout_width="wrap_content"
+        android:id="@+id/tips_text"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:lineSpacingExtra="5dp"
         android:layout_gravity="center"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$0"/>
+        android:text=""
+        android:singleLine="false" />
 
 
 </LinearLayout>

@@ -24,6 +24,9 @@
         <activity android:name=".SettingsActivity"
             android:label="Settings">
         </activity>
+        <activity android:name=".TipsActivity"
+            android:label="Tips and Tricks">
+        </activity>
     </application>
 
 </manifest>

@@ -19,14 +19,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".CostActivity"
-            android:value=".MainActivity"
+            android:parentActivityName=".MainActivity"
             android:label="Cost Calculator">
         </activity>
         <activity android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity"
             android:label="Settings">
         </activity>
         <activity android:name=".TipsActivity"
-            android:value=".MainActivity"
+            android:parentActivityName=".MainActivity"
             android:label="Tips and Tricks">
         </activity>
     </application>

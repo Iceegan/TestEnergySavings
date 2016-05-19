@@ -5,7 +5,9 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -59,12 +61,13 @@ public class TipsActivity extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
-            default:
-                return super.onOptionsItemSelected(item);
         }
+        return super.onOptionsItemSelected(item);
     }
+
 }
 

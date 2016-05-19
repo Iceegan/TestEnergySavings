@@ -15,6 +15,8 @@ public class SettingsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+        getActionBar().setHomeButtonEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         //declarations
         final TextView aboutText = (TextView) findViewById(R.id.about_tv);

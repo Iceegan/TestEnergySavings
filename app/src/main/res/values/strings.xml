@@ -8,9 +8,9 @@
     <string name="settings_label">Settings</string>
     <string name="ok_label">OK</string>
     <string name="about_title">About Energy Savings</string>
-    <string name="about_text">Remember to fill this out KEEGAN</string>
+    <string name="about_text">Written by Keegan Campanelli and Jonathan Corbin, BRVGS\n\nMay 18, 2016\n\nProgram Purpose: To help save energy and money by teaching how much appliances cost to run.</string>
     <string name="help_title">Help for Energy Savings</string>
-    <string name="help_text">Thank you for downloading our app! Energy Savings has one main purpose: to help you save energy! Use the Energy Calculator to get started. Type in your the power draw of your appliance, how long you use it every day, and what your monthly cost per kWh of electricity is and it will calculate the operating cost of that appliance!</string>
+    <string name="help_text">Thank you for downloading our app! Energy Savings has one main purpose: to help you save energy! Use the Energy Calculator to get started.\n\nType in:\n\t1. The power draw of your appliance\n\t2. How long you use it every day\n\t3. Your monthly cost per kWh of electricity\n\nIt will calculate the operating cost of that appliance!\n\nYou can also find nice tips on how to save energy.\nSelect the Tips and Tricks Button and choose a topic to get started.</string>
     <string name="hours_text">Hours Per Day Appliance is Used?</string>
     <string name="lighting_title">Tips for lighting:</string>
     <string name="heating_title">Tips for HVAC:</string>

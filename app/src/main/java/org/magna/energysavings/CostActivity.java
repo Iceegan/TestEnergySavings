@@ -34,6 +34,7 @@ public class CostActivity extends Activity {
         final Button calcButton = (Button) findViewById(R.id.calc_button);
         final TextView cOuptut = (TextView) findViewById(R.id.c_output);
 
+        //calculate the cost of using the appliance
         calcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +77,7 @@ public class CostActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    //method to do the calculation
     public String calculate(double time, double power, double bill, String timeUnit, String powerUnit, String billUnit){
         double powerPerDay = time*power;
         if(timeUnit.equals("Minutes")){
